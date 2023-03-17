@@ -6,10 +6,10 @@
 # Appearance
 
 appearance:
-  theme_day: coffee   
+  theme_day: coffee
   theme_night: coffee
   font: coffee
-  font_size: L
+  font_size: LM
 
 # SEO
 
@@ -29,7 +29,7 @@ marketing:
 
 # Site header
 
-header:
+header: 
   navbar:
     enable: true
     align: l
@@ -105,6 +105,8 @@ extensions:
     branch: main
     local_backend: false
   academicons:
+    enable: true
+  ai:
     enable: true
 
 # Security

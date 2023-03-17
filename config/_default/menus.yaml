@@ -5,19 +5,19 @@
 
 main:
   - name: Home
-    url: '#about'
+    url: '#home'
     weight: 10
-  - name: Experience
-    url: '#posts'
+  - name: Publications
+    url: '#publications'
     weight: 20
   - name: Blogs
-    url: '#projects'
+    url: '#blogs'
     weight: 30
   - name: Data Visualizations
-    url: '#talks'
+    url: '#viz'
     weight: 40
-  - name: Publications
-    url: '#featured'
+  - name: Projects
+    url: '#projects'
     weight: 50
   - name: Contact
     url: '#contact'

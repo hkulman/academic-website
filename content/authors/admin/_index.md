@@ -10,7 +10,7 @@ last_name: Ulman
 superuser: true
 
 # Role/position/tagline
-role: Research Data Scientist at Mile Two and PhD Candidate at Rockefeller Neuroscience Institute, WVU
+role: Research Data Scientist at Mile Two and PhD Candidate (A.B.D) at Rockefeller Neuroscience Institute, WVU
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -18,7 +18,7 @@ organizations:
     url: https://www.miletwo.us/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include capture of physiological metrics using wearable technology and analysis of multi-modal datastreams to 
 
 # Interests to show in About widget
 interests:
@@ -34,7 +34,7 @@ education:
   courses:
     - course: PhD in Biomedical Engineering
       institution: West Virginia University
-      year: 2023
+      year: In Progress 
     - course: BSc in Biomedical Engineering
       institution: West Virginia University
       year: 2019
