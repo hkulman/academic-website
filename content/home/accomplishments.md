@@ -23,30 +23,39 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
+
+  - certificate_url: https://www.udemy.com/certificate/UC-8c151390-97fe-4dc0-ae0c-9a81fab129eb/
+    date_end: ''
+    date_start: '2022-02-02'
+    description: 
+    organization: Udemy
+    organization_url: https://www.udemy.com/
+    title: 'Master the Fourier Transform and its Applications'
+    url:  https://www.udemy.com/course/fourier-transform-mxc/
   - certificate_url: https://www.udemy.com/certificate/UC-79d06036-be42-4a6d-a3e5-d36419906e51/
     date_end: ''
     date_start: '2023-07-11'
     description: ''
-    organization: udemy
+    organization: Udemy
     organization_url: https://www.udemy.com/
-    title: API and Web Service Introduction
-    url: ''
-  - certificate_url: https://www.edx.org
+    title: 'API and Web Service Introduction'
+    url: https://www.udemy.com/course/api-and-web-service-introduction/
+  - certificate_url: https://www.udemy.com/certificate/UC-168ec902-eed9-466b-9658-bda2232259c0/
     date_end: ''
-    date_start: '2021-01-01'
-    description: Formulated informed blockchain models, hypotheses, and use cases.
-    organization: edX
-    organization_url: https://www.edx.org
-    title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-  - certificate_url: https://www.datacamp.com
-    date_end: '2020-12-21'
-    date_start: '2020-07-01'
+    date_start: '2022-07-27'
     description: ''
-    organization: DataCamp
-    organization_url: https://www.datacamp.com
-    title: 'Object-Oriented Programming in R'
-    url: ''
+    organization: Udemy
+    organization_url: https://www.udemy.com/
+    title: 'Statistics with R - Advanced Level'
+    url: https://www.udemy.com/course/statistics-with-r-advanced-level/
+  - certificate_url: https://www.udemy.com/certificate/UC-0d484327-5ba5-4d54-8a90-520b9da782c3/
+    date_end: ''
+    date_start: '2022-07-13'
+    description: ''
+    organization: Udemy
+    organization_url: https://www.udemy.com/
+    title: 'R Programming: Advanced Analytics in R for Data Science'
+    url: https://www.udemy.com/course/r-analytics/
 
 design:
   columns: '2'

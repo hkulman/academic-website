@@ -10,7 +10,7 @@ last_name: Ulman
 superuser: true
 
 # Role/position/tagline
-role: Research Data Scientist at Mile Two and PhD Candidate (A.B.D) at Rockefeller Neuroscience Institute, WVU
+role: Research Data Scientist @ Mile Two & PhD Candidate (A.B.D) @ Rockefeller Neuroscience Institute, WVU
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -72,7 +72,7 @@ email: ''
 highlight_name: true
 ---
 
-Hana is a PhD student at WVU in Biomedical Engineering, while working full-time as a Research Data Scientist at Mile Two. 
+I'm currently a full-time research data scientist at Mile Two LLC, while pursuing my PhD in biomedical engineering at the Rockefeller Neuroscience Institute at West Virginia University. I'm a self-declared nerd and if I'm not behind an IDE coding my little heart away, I'm probably nose deep into a book or outside enjoying a hike in the woods with my dog, Luna! 
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/UlmanResume.pdf" "newtab" >}}resumé{{< /staticref >}}.

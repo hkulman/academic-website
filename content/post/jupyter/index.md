@@ -1,5 +1,5 @@
 ---
-title: Display Jupyter Notebooks with Academic
+title: Heart Rate Variability 
 subtitle: Learn how to blog in Academic using Jupyter notebooks
 summary: Learn how to blog in Academic using Jupyter notebooks
 authors:

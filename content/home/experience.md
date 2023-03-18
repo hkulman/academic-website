@@ -33,6 +33,7 @@ experience:
         Responsibilities include:
         
         * Experimental Design & Collection
+        * Wearable Technology & Psychophysiological Monitoring
         * Data Analysis & Visualizations
         * Signal Processing 
         * Report Generation
@@ -48,11 +49,40 @@ experience:
         Responsibilities include:
         
         * Experimental Design
+        * Human Performance
+        * Wearable Technology Validation
         * Human Subject Data Collection
         * Data Analysis / Visualization
         * Model Deployment 
         
+  - title: Research Assistant
+    company: Aarhus University
+    company_url: 'https://ece.au.dk/en'
+    company_logo: 
+    location: Aarhus, Denmark
+    date_start: '2019-08-01'
+    date_end: '2019-12-21'
+    description: |2-
+        Responsibilities include:
+        
+        * ECG Signal Processing
+        * Data Analysis / Visualization
+        * Communication of Scientific Ideas 
 
+  - title: NASA Johnson Space Center Summer Intern
+    company: NASA
+    company_url: 'https://www.nasa.gov/hhp/index.html'
+    company_logo: 
+    location: Houston, Texas
+    date_start: '2018-08-15'
+    date_end: '2018-08-15'
+    description: |2-
+        Responsibilities include:
+        
+        * Development of Hybrid Reality Environment 
+        * Wearable Technology
+        * Real-Time Data Streaming
+        * Cognitive Demand / Workload Assessment
 design:
   columns: '2'
 ---

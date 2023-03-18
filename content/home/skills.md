@@ -24,11 +24,11 @@ feature:
     icon: chart-line
     icon_pack: fab
     name: Matlab
-  - description: '3 years experience'
+  - description: '4 years experience'
     icon: brain-circuit
     icon_pack: fab
     name: Machine Learning
-  - description: '2 years experience'
+  - description: '4 years experience'
     icon: python
     icon_pack: fab
     name: Python   

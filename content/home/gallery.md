@@ -7,13 +7,13 @@ widget: markdown
 headless: true
 
 # Order that this section appears on the page.
-weight: 66
+weight: 120
 
 title: Gallery
-subtitle:
+subtitle: A little glimpse into my life
 
 design:
-  columns: '1'
+  columns: '2'
 ---
 
-{{< gallery album="demo" >}}
+
