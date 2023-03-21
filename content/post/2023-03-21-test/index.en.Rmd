@@ -1,17 +1,26 @@
 ---
-title: "Hello R Markdown"
-author: "Hana Ulman"
-date: 2020-12-01T21:13:14-05:00
-categories: ["R"]
-tags: ["Visualizations", "plot", "regression"]
+title: Tidy Tuesday Visualizations - NY Times Best Sellers
+author: R package build
+date: '2023-03-21'
+slug: test
+categories: []
+tags:
+  - Data Analysis
+  - Visualizations
+  - TidyTuesday
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2023-03-21T18:54:23-04:00'
+featured: no
+draft: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE)
-```
-
 ## Loading Packages / Data
-
 
 ```{r}
 library("pacman") 
@@ -23,13 +32,11 @@ tuesdata <- tidytuesdayR::tt_load(2022, week = 19)
 
 nyt_titles <- tuesdata$nyt_titles
 ```
-
 ## Visualizing Best Sellers Since 2000 for at least 1 year
-
-You can also embed plots. See Figure \@ref(fig:pie) for example:
 
 ```{r}
 # Filtering Data for books that have been best sellers for at least a year
+
 year_bestsellers <- nyt_titles %>%
   filter(total_weeks >= 52) %>%
   filter(year > 2000) %>%
@@ -53,7 +60,7 @@ ggplot(year_bestsellers, aes(y = total_years, x = reorder(booktitle, total_years
                                "#e0c2a5")) + 
   geom_text(aes(label = booktitle), color = "black", size = 2.3, angle = 270, position=position_stack(vjust=0.5)) + 
   labs(y = "Years", x = "", title = "NY Times Best Selling Books Since 2000",
-       subtitle = "The books depicted below were listed as best sellers for at least 52 consecutive weeks.", caption = "Data Source: Kays et al., 2020 & McDonald and Cole, 2020") +
+       subtitle = "The books depicted below were listed as best sellers for at least 52 consecutive weeks.") +
   theme(axis.text.x = element_blank(),
         axis.title.x = element_blank(),
         axis.ticks.x = element_blank(), 
@@ -61,4 +68,13 @@ ggplot(year_bestsellers, aes(y = total_years, x = reorder(booktitle, total_years
         plot.title = element_text(hjust = 0.5),
         plot.subtitle = element_text(hjust = 0.5)
   )
+
 ```
+
+
+## References
+
+[1] Kays R, Dunn RR, Parsons AW, Mcdonald B, Perkins T, Powers S, Shell L, McDonald JL, Cole H, Kikillus H, Woods L, Tindle H, Roetman P (2020) The small home ranges and large local ecological impacts of pet cats. Animal Conservation. doi:10.1111/acv.12563
+
+[2] McDonald JL, Cole H (2020) Data from: The small home ranges and large local ecological impacts of pet cats [United Kingdom]. Movebank Data Repository. doi:10.5441/001/1.pf315732
+
