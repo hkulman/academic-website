@@ -2,13 +2,13 @@
 title: Tidy Tuesday Visualizations - NY Times Best Sellers
 author: Hana
 date: '2023-03-21'
-slug: test
+slug: Tidy Tuesday - Visualization
 categories: []
 tags:
   - Data Analysis
   - Visualizations
   - TidyTuesday
-subtitle: ''
+subtitle: 'May 11, 2022 - Tidy Tuesday Data Visualization'
 summary: ''
 authors: []
 lastmod: '2023-03-21T18:54:23-04:00'
@@ -20,7 +20,14 @@ image:
   preview_only: no
 projects: []
 ---
+
+As an avid reader, I was particularly interested in this dataset. I am constantly looking for a new *best* book to read so this dataset was particularly fun to work with. 
+
+
 ## Loading Packages / Data
+
+
+
 
 
 

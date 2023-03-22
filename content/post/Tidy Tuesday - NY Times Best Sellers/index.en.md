@@ -1,14 +1,14 @@
 ---
-title: TEST
-author: R package build
+title: Tidy Tuesday Visualizations - NY Times Best Sellers
+author: Hana
 date: '2023-03-21'
-slug: test
+slug: Tidy Tuesday - Visualization
 categories: []
 tags:
   - Data Analysis
   - Visualizations
   - TidyTuesday
-subtitle: ''
+subtitle: 'May 11, 2022 - Tidy Tuesday Data Visualization'
 summary: ''
 authors: []
 lastmod: '2023-03-21T18:54:23-04:00'
@@ -20,15 +20,20 @@ image:
   preview_only: no
 projects: []
 ---
+
+As an avid reader, I was particularly interested in this dataset. I am constantly looking for a new *best* book to read so this dataset was particularly fun to work with. 
+
+
 ## Loading Packages / Data
 
 
-```r
-library("pacman") 
-p_load(dplyr, tidyverse, extrafont, ggplot2, lubridate, tidyr, data.table, rlist, xlsx, tidytuesdayR, ggpubr, jpeg)
 
-
-tuesdata <- tidytuesdayR::tt_load('2022-05-10')
+```
+## Only 10 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
+## Only 10 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
+## Only 10 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
+## Only 10 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
+## Only 10 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
 ```
 
 ```
@@ -36,7 +41,15 @@ tuesdata <- tidytuesdayR::tt_load('2022-05-10')
 ```
 
 ```
+## Only 9 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
+```
+
+```
 ## --- There are 2 files available ---
+```
+
+```
+## Only 8 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
 ```
 
 ```
@@ -44,12 +57,15 @@ tuesdata <- tidytuesdayR::tt_load('2022-05-10')
 ```
 
 ```
-## 
+## Only 8 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
+```
+
+```
 ## 	Downloading file 1 of 2: `nyt_titles.tsv`
 ```
 
 ```
-## Only 10 Github queries remaining until 2023-03-21 07:44:01 PM EDT.
+## Only 7 Github queries remaining until 2023-03-22 03:33:17 PM EDT.
 ```
 
 ```
@@ -57,7 +73,7 @@ tuesdata <- tidytuesdayR::tt_load('2022-05-10')
 ```
 
 ```
-## Only 9 Github queries remaining until 2023-03-21 07:44:00 PM EDT.
+## Only 6 Github queries remaining until 2023-03-22 03:33:17 PM EDT.
 ```
 
 ```
@@ -71,16 +87,9 @@ tuesdata <- tidytuesdayR::tt_load('2022-05-10')
 ## --- Download complete ---
 ```
 
-```r
-tuesdata <- tidytuesdayR::tt_load(2022, week = 19)
 ```
-
-```
-## Only 8 Github queries remaining until 2023-03-21 07:44:01 PM EDT.
-```
-
-```
-## Only 8 Github queries remaining until 2023-03-21 07:44:01 PM EDT.
+## Only 5 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
+## Only 5 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
 ```
 
 ```
@@ -88,7 +97,7 @@ tuesdata <- tidytuesdayR::tt_load(2022, week = 19)
 ```
 
 ```
-## Only 8 Github queries remaining until 2023-03-21 07:44:01 PM EDT.
+## Only 5 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
 ```
 
 ```
@@ -96,7 +105,7 @@ tuesdata <- tidytuesdayR::tt_load(2022, week = 19)
 ```
 
 ```
-## Only 7 Github queries remaining until 2023-03-21 07:44:01 PM EDT.
+## Only 4 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
 ```
 
 ```
@@ -104,7 +113,7 @@ tuesdata <- tidytuesdayR::tt_load(2022, week = 19)
 ```
 
 ```
-## Only 7 Github queries remaining until 2023-03-21 07:44:01 PM EDT.
+## Only 4 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
 ```
 
 ```
@@ -112,7 +121,7 @@ tuesdata <- tidytuesdayR::tt_load(2022, week = 19)
 ```
 
 ```
-## Only 6 Github queries remaining until 2023-03-21 07:44:01 PM EDT.
+## Only 3 Github queries remaining until 2023-03-22 03:33:18 PM EDT.
 ```
 
 ```
@@ -120,7 +129,7 @@ tuesdata <- tidytuesdayR::tt_load(2022, week = 19)
 ```
 
 ```
-## Only 5 Github queries remaining until 2023-03-21 07:44:01 PM EDT.
+## Only 2 Github queries remaining until 2023-03-22 03:33:17 PM EDT.
 ```
 
 ```
@@ -133,11 +142,11 @@ tuesdata <- tidytuesdayR::tt_load(2022, week = 19)
 ```
 ## --- Download complete ---
 ```
+## Visualizing Books in the Best Sellers List for 1 Year Since 2000 
 
-```r
-nyt_titles <- tuesdata$nyt_titles
-```
-## Visualizing Best Sellers Since 2000 for at least 1 year
+The Best Sellers list contains books starting in the year 1931 to 2020. I decided to filter the data to only include best sellers from the 21st century. To really get the cream of the crop, I filtered the data again, so that all books included in this analysis were listed as a best seller for at least 52 weeks (1 year). 
+
+As shown in the visualization below, the number one bestseller within this time range was The Da Vinci Code by Dan Brown, a book that I still need to read. Of the 16 books listed, my person favorite book that I've read thus far, was "The Silent Patient", there's nothing better than a good thriller! 
 
 
 ```r
@@ -172,13 +181,64 @@ ggplot(year_bestsellers, aes(y = total_years, x = reorder(booktitle, total_years
         axis.ticks.x = element_blank(), 
         legend.position = "none", 
         plot.title = element_text(hjust = 0.5),
-        plot.subtitle = element_text(hjust = 0.5)
+        plot.subtitle = element_text(hjust = 0.5),
+        plot.background = element_rect(colour = "#ddbea9"),
   )
 ```
 
 <img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-2-1.png" width="672" />
 
+## Examining Trends in Best Sellers that were Ranked #1 AND were Best Sellers For the Most Weeks that Year
 
+Ac
+
+
+```r
+library(plotly)
+```
+
+```
+## 
+## Attaching package: 'plotly'
+```
+
+```
+## The following object is masked from 'package:ggplot2':
+## 
+##     last_plot
+```
+
+```
+## The following object is masked from 'package:stats':
+## 
+##     filter
+```
+
+```
+## The following object is masked from 'package:graphics':
+## 
+##     layout
+```
+
+```r
+ranked_books <- nyt_titles %>%
+  filter(best_rank == 1) %>%
+  arrange(desc(total_weeks)) %>%
+  group_by(year) %>%
+  slice(1) %>% 
+  mutate(debut_rank_cat = case_when(
+    debut_rank <= 5 ~ "Ranked 1-5", 
+    debut_rank > 5 & debut_rank <= 10 ~ "Ranked 5-10",
+    debut_rank > 10 & debut_rank <= 15 ~ "Ranked 10-15", 
+    TRUE ~ "Ranked 16-20"
+  ))
+ranked_books$debut_rank <- factor(ranked_books$debut_rank, levels = c("Ranked 1-5", "Ranked 5-10", "Ranked 10-15", "Ranked 16-20"))
+test <- ggplot(ranked_books, aes(x = year, y = total_weeks, fill = debut_rank_cat, lable = title)) + 
+  geom_bar(stat = "identity", position = "dodge") + 
+  scale_fill_manual(values = c("#796535", "#8d8233", "#da8936", "#d6695a")) +
+  labs(title= "#1 Ranked Best Selling Books for Each Year (1931-2020)", y = "Total Weeks as a Best Seller", fill = "What was the book\nranked when\nit first debuted?", y = "Year") + 
+  theme(panel.background = element_rect(fill = "white"))
+```
 ## References
 
 [1] Kays R, Dunn RR, Parsons AW, Mcdonald B, Perkins T, Powers S, Shell L, McDonald JL, Cole H, Kikillus H, Woods L, Tindle H, Roetman P (2020) The small home ranges and large local ecological impacts of pet cats. Animal Conservation. doi:10.1111/acv.12563

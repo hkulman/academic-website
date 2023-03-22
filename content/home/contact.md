@@ -26,7 +26,7 @@ content:
 
   # Contact details (edit or remove options as required)
   email: hkulman@mix.wvu.edu
-  phone: 304 240 4033
+  phone: 
 
 
 design:
