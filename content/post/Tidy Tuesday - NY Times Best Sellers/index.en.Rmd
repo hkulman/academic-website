@@ -14,7 +14,7 @@ authors: []
 lastmod: '2023-03-21T18:54:23-04:00'
 featured: no
 draft: no
-image:
+image: 
   caption: ''
   focal_point: ''
   preview_only: no
