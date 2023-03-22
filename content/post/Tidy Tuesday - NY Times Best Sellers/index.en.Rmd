@@ -83,7 +83,7 @@ ggplot(year_bestsellers, aes(y = total_years, x = reorder(booktitle, total_years
 
 ## Examining Trends in Best Sellers that were Ranked #1 AND were Best Sellers For the Most Weeks that Year
 
-I also examined the books that were ranked #1 for the greatest total number of books for each year. The data was further grouped by what the debut ranking was (i.e., what rank the book received when it first hit the bestsellers list).
+I also examined the books that were ranked #1 for the greatest total number of books for each year. The data was further grouped by what the debut ranking was (i.e., what rank the book received when it first hit the bestsellers list)!
 
 This plot is **interactive**! Hover over a bar to see the title and author for each top ranked book! 
 
