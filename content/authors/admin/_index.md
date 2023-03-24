@@ -18,7 +18,8 @@ organizations:
     url: https://www.miletwo.us/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include capture of physiological metrics using wearable technology and analysis of multi-modal datastreams to 
+
+bio: My research interests include the capture of physiological metrics using wearable technology, analysis, intepretation, and visualization of physiological meta-data, and predictive modelling. 
 
 # Interests to show in About widget
 interests:

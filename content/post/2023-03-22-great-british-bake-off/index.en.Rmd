@@ -1,0 +1,68 @@
+---
+title: Great British Bake Off
+author: R package build
+date: '2023-03-22'
+slug: great-british-bake-off
+categories: []
+tags:
+  - Data Analysis
+  - Visualizations
+  - TidyTuesday
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2023-03-22T17:34:53-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+The Great British Bake-Off, aka 
+## Loading Packages and Data
+```{r}
+install.packages("bakeoff")
+library(tidyverse)
+library(bakeoff)
+library(magick)
+library(ggimage)
+
+ratings_dat <- bakeoff::ratings
+episodes_dat <- bakeoff::episodes
+bakers_dat <- bakeoff::bakers
+challenges_dat <- bakeoff::challenges
+```
+
+
+## Season Winners 
+
+```{r}
+winners_each_season <- bakers_dat %>%
+  filter(series_winner == 1) %>% 
+  mutate(image = list(
+    image_read("https://www.goldderby.com/wp-content/uploads/2020/11/GBBO-1.jpg?w=620"), 
+    image_read("https://www.goldderby.com/wp-content/uploads/2020/11/GBBO-1.jpg?w=620"), 
+    image_read("https://www.goldderby.com/wp-content/uploads/2020/11/GBBO-1.jpg?w=620"), 
+    image_read("https://www.goldderby.com/wp-content/uploads/2020/11/GBBO-1.jpg?w=620"), 
+    image_read("https://www.goldderby.com/wp-content/uploads/2020/11/GBBO-1.jpg?w=620"), 
+    image_read("https://www.goldderby.com/wp-content/uploads/2020/11/GBBO-1.jpg?w=620"), 
+    image_read("https://www.goldderby.com/wp-content/uploads/2020/11/GBBO-1.jpg?w=620"), 
+    image_read("https://www.goldderby.com/wp-content/uploads/2020/11/GBBO-1.jpg?w=620"), 
+    image_read("https://www.goldderby.com/wp-content/uploads/2020/11/GBBO-1.jpg?w=620"), 
+    image_read("https://www.goldderby.com/wp-content/uploads/2020/11/GBBO-1.jpg?w=620") 
+    
+  ))
+
+ggplot(winners_each_season, aes(x = technical_winner, y = baker_full, image = image)) + 
+  geom_image(aes(image = image))
+```
+
+
+
+
+```{r}
+
+
+```
