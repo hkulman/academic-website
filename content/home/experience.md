@@ -74,7 +74,7 @@ experience:
     company_url: 'https://www.nasa.gov/hhp/index.html'
     company_logo: 
     location: Houston, Texas
-    date_start: '2018-08-15'
+    date_start: '2018-05-15'
     date_end: '2018-08-15'
     description: |2-
         Responsibilities include:
